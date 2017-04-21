@@ -1,0 +1,12 @@
+This Docker configuration can be used to quickly get a development environment up and running.
+
+Suggested commands to run:
+
+~~~
+docker build -t winstream .
+
+docker run -d -p 8088:80 -v "C:/inetpub/wwwroot/WInStreamLegacy/CMS/:/var/www/app" winstream
+~~~
+Replace `C:/inetpub/wwwroot/WInStreamLegacy/CMS` with the path to the code on the host machine
+
+You should then be able to access the website from http://localhost:8080
